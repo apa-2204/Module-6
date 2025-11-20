@@ -32,11 +32,26 @@ To write a Python program to perform division of two complex numbers using the b
 ### PROGRAM
 
 ```
+Reg.No: 212223060210
+Name: Prince Andrew A
+
+class Complex:
+    def __init__(self,real,imag):
+        self.real=real
+        self.imag=imag
+    def __add__(self,other):
+        real_part=self.real*other.real
+        imag_part=self.imag*other.imag
+        return(real_part,imag_part)
+obj1=Complex(1, 2)
+obj2=Complex(2, 3)
+print(obj1+obj2)
 
 ```
 
 ### OUTPUT
 
+<img width="447" height="241" alt="image" src="https://github.com/user-attachments/assets/e8918d2b-696b-435a-8cc6-99760ea5f773" />
 
 ### RESULT
-
+Thus, the program to overload the addition operator for complex numbers was executed successfully and the output was verified.
